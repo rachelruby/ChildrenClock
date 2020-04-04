@@ -1,0 +1,293 @@
+// .header {
+//   display: flex;
+//   justify-content: center;
+//   background-image: url('../../assets/images/daytime.jpg');
+//   background-position: center;
+// }
+
+h1 {
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  color: black;
+  text-shadow: 4px 4px 5px red;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.kids-clock {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('../../assets/images/daytime.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clock {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 20px solid rgb(0, 0, 0);
+  margin: 40px;
+  font-size: 25px;
+  box-shadow: inset 20px 20px 30px rgba(0,0,0,0.1),
+                    0 20px 20px rgba(0,0,0,.2),
+                    0 0 0 4px rgba(255,255,255,1);
+  background-image: url('../../assets/images/snoopyhouse.png'), url('../../assets/images/rightsit.png');
+  background-size: 60% 60%, 20% 20%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+  top: 10%;
+}
+
+// #snoopy {
+// }
+
+.clock::before
+{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #848484;
+  border: 2px solid #fff;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.sec-hand {
+  width: 1px;
+  height: 50%;
+  background: #ff6767;
+  transform-origin: 50% 80%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border-radius: 100% 100% 0 0 ;
+  z-index: 6;
+}
+
+.min-hand {
+  width: 75px;
+  height: 45%;
+  position: absolute;
+  top: 4%;
+  transform: rotate(-10deg);
+  transform-origin: 50% 98%;
+}
+.min-value {
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 5;
+  text-align: center;
+  top: 10%;
+  font-size: medium;
+  justify-content: center;
+}
+
+#wandarm {
+  width: 3em;
+  height: 6em;
+  position: absolute;
+  z-index: 4;
+  transform: rotate(-15deg);
+  transform-origin: 50% 100%;
+}
+
+#bubble {
+  width: 3em;
+  height: 3em;
+}
+
+.hr-hand {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: baseline;
+  width: 5px;
+  height: 25%;
+  background: #848484;
+  position: absolute;
+  // transform: rotate(-60deg);
+  transform-origin: 50% 80%;
+  top: 30%;
+  left: calc(50% + -2px);
+  border-radius: 100% 100% 0 0 ;
+  // z-index: 2;
+  // background-image: url(../public/purseright.png);
+  // background-position: center;
+  // background-size: 100% 100%;
+}
+
+.hr-value {
+  display: flex;
+  // flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  // background-image: url(../public/minniepurse.png);
+  // background-size: contain;
+  // background-position: top;
+  // background-repeat:no-repeat;
+  position: absolute;
+  bottom: 2%;
+  align-self: center;
+  transform: rotate(-80deg);
+  transform-origin: 50% 100%;
+  text-align: center;
+  left: -80%;
+}
+
+#purse {
+  width: 120px;
+  height: 120px;
+  z-index: 3;
+  transform: rotate(-80deg);
+  transform-origin: center;
+}
+
+.hours {
+  // align-self: flex-start;
+  z-index: 8;
+  background: white;
+  // position: absolute;
+  border-radius: 50%;
+}
+
+#pursearm {
+  width: 2em;
+  height: 4.5em;
+  transform-origin: .75cm;
+  position: absolute;
+  bottom: 3%;
+  transform: rotate(5deg);
+}
+
+.num {
+  height: 100%;
+  position: absolute;
+  left: calc(50% - 0.5em);
+}
+
+.num div {
+  width: 1em;
+  line-height: 2em;
+  color: rgb(133, 131, 131);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.num1 {
+  transform: rotate(30deg);
+}
+
+.num1 div {
+  transform: rotate(-30deg);
+}
+
+.num2 {
+  transform: rotate(60deg);
+}
+
+.num2 div {
+  transform: rotate(-60deg);
+}
+
+.num3 {
+  transform: rotate(90deg);
+}
+
+.num3 div {
+  transform: rotate(-90deg);
+}
+
+.num4 {
+  transform: rotate(120deg);
+}
+
+.num4 div {
+  transform: rotate(-120deg);
+}
+
+.num5 {
+  transform: rotate(150deg);
+}
+
+.num5 div {
+  transform: rotate(-150deg);
+}
+
+.num6 {
+  transform: rotate(180deg);
+}
+
+.num6 div {
+  transform: rotate(-180deg);
+}
+
+.num7 {
+  transform: rotate(210deg);
+}
+
+.num7 div {
+  transform: rotate(-210deg);
+}
+
+.num8 {
+  transform: rotate(240deg);
+}
+
+.num8 div {
+  transform: rotate(-240deg);
+}
+
+.num9 {
+  transform: rotate(270deg);
+}
+
+.num9 div {
+  transform: rotate(-270deg);
+}
+
+.num10 {
+  transform: rotate(300deg);
+}
+
+.num10 div {
+  transform: rotate(-300deg);
+}
+
+.num11 {
+  transform: rotate(330deg);
+}
+
+.num11 div {
+  transform: rotate(-330deg);
+}
+
+.num12 {
+  transform: rotate(0deg);
+}
+
+.num12 div {
+  transform: rotate(-0deg);
+}
+
+.map {
+
+}
