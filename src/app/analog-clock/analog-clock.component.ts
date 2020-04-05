@@ -12,6 +12,7 @@ export class AnalogClockComponent implements OnInit {
   @ViewChild('minHand', {static: false}) minHand: ElementRef;
   @ViewChild('minValue', {static: false}) minValue: ElementRef;
   @ViewChild('secHand', {static: false}) secHand: ElementRef;
+  // @ViewChild('bubble', {static: false}) bubble: ElementRef;
 
   private date = new Date()
 
@@ -31,6 +32,7 @@ export class AnalogClockComponent implements OnInit {
     this.secHand.nativeElement.style.transform = 'rotate(' + date.getSeconds() * 6 + 'deg)';
     this.minHand.nativeElement.style.transform = 'rotate(' + date.getMinutes() * 6 + 'deg)';
     this.minValue.nativeElement.style.transform = 'rotate(-' + date.getMinutes() * 6 + 'deg)';
+    // this.bubble.nativeElement.style.transform = 'rotate(-' + date.getMinutes() * 6 + 'deg)'
     this.hrHand.nativeElement.style.transform = 'rotate(' + (date.getHours() * 30 + date.getMinutes() * 0.5) + 'deg)';
     // this.hrValue.nativeElement.style.transform = 'rotate(-' + (date.getHours() * 30 + date.getMinutes() * 0.5) + 'deg)';
 
