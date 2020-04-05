@@ -91,16 +91,20 @@ h2 {
   border-radius: 100% 100% 0 0 ;
 }
 .min-value {
-  width: 20px;
-  height: 20px;
-  background: white;
+  width: 35px;
+  height: 35px;
+  background-image: url('../../assets/images/bubbleLeft.png');
+  background-size: cover;
+  // background-position: top;
   position: absolute;
   border-radius: 50%;
-  z-index: 5;
+  // z-index: 5;
   text-align: center;
-  top: 10%;
+  top: 5%;
   font-size: medium;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #wandarm {
@@ -116,8 +120,11 @@ h2 {
   width: 3em;
   height: 3em;
   position: absolute;
-  transform: rotate(-40deg);
-  transform-origin: 50% 15%;
+  transform: rotate(12deg);
+  transform-origin: 10% 15%;
+  // top: 10%;
+  // left: 10%;
+  z-index: 4;
 }
 
 .hr-hand {
@@ -126,7 +133,7 @@ h2 {
   // align-items: baseline;
   width: 5px;
   height: 25%;
-  background: #848484;
+  background: #100761;
   position: absolute;
   // transform: rotate(-60deg);
   transform-origin: 50% 80%;
@@ -193,7 +200,7 @@ h2 {
 .num div {
   width: 1em;
   line-height: 2em;
-  color: rgb(133, 131, 131);
+  color: #100761;
   text-align: center;
   vertical-align: middle;
 }
