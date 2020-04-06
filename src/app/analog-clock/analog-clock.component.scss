@@ -1,9 +1,13 @@
-// .header {
-//   display: flex;
-//   justify-content: center;
-//   background-image: url('../../assets/images/daytime.jpg');
-//   background-position: center;
-// }
+.header {
+  width: 99.5vw;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../assets/images/snoopy_banner.png');
+  background-position: center;
+  background-size: contain;
+  border: solid;
+  border-color: black;
+}
 
 h1 {
   color: white;
@@ -81,30 +85,41 @@ h2 {
 
 .min-hand {
   width: 3px;
-  height: 50%;
-  background: aqua;
+  height: 48%;
+  background: #50BFE6;
   position: absolute;
-  top: 10%;
+  top: 12%;
   // transform: rotate(-10deg);
   transform-origin: 50% 80%;
   left: calc(50% - 1px);
   border-radius: 100% 100% 0 0 ;
 }
 .min-value {
-  width: 35px;
-  height: 35px;
-  background-image: url('../../assets/images/bubbleLeft.png');
-  background-size: cover;
-  // background-position: top;
   position: absolute;
   border-radius: 50%;
   // z-index: 5;
-  text-align: center;
   top: 5%;
-  font-size: medium;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.minutes {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  // color: red;
+  font-size: 0.7em;
+  font-family: "DK Cool Crayon";
+  // text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // vertical-align: text-bottom;
+  background-image: url('../../assets/images/bubbleLeft.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 #wandarm {
@@ -116,12 +131,16 @@ h2 {
   transform-origin: 50% 100%;
 }
 
-#bubble {
+#woodstock {
   width: 3em;
   height: 3em;
   position: absolute;
   transform: rotate(12deg);
   transform-origin: 10% 15%;
+  background-image: url('../../assets/images/woodstockbubbleLeft.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
   // top: 10%;
   // left: 10%;
   z-index: 4;
@@ -132,13 +151,13 @@ h2 {
   // flex-direction: column;
   // align-items: baseline;
   width: 5px;
-  height: 25%;
+  height: 32%;
   background: #100761;
   position: absolute;
   // transform: rotate(-60deg);
   transform-origin: 50% 80%;
-  top: 30%;
-  left: calc(50% + -2px);
+  top: 24%;
+  // left: calc(50% + -2px);
   border-radius: 100% 100% 0 0 ;
   // z-index: 2;
   // background-image: url(../public/purseright.png);
@@ -200,9 +219,11 @@ h2 {
 .num div {
   width: 1em;
   line-height: 2em;
-  color: #100761;
+  color: white;
   text-align: center;
   vertical-align: middle;
+  font-family: "DK Cool Crayon";
+  text-shadow: 3px 3px 4px orangered;
 }
 
 .num1 {
@@ -304,3 +325,6 @@ h2 {
 .map {
 
 }
+
+@import url(//db.onlinewebfonts.com/c/2858f88cb71b6ac1122a944e220d9940?family=DK+Cool+Crayon);
+@font-face {font-family: "DK Cool Crayon"; src: url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.eot"); src: url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.woff") format("woff"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.svg#DK Cool Crayon") format("svg"); }

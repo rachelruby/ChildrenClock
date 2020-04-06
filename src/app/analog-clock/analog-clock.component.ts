@@ -23,7 +23,7 @@ export class AnalogClockComponent implements OnInit {
   public ampm: string;
   public day: string;
   public backgound: string;
-  public woodstock: string;
+  public woodstock: '';
   public snoopy: string;
 
   constructor() { }
