@@ -41,6 +41,8 @@ export class AnalogClockComponent implements OnInit {
     this.minValue.nativeElement.style.transform = 'rotate(-' + date.getMinutes() * 6 + 'deg)';
     this.hrHand.nativeElement.style.transform = 'rotate(' + (date.getHours() * 30 + date.getMinutes() * 0.5) + 'deg)';
 
+    this.day = this.daysOfWeek[this.date.getDay()]
+
     const hours = date.getHours();
     this.ampm = hours >= 12 ? 'PM' : 'AM'
     this.backgound = hours > 6 && hours < 18 ? "url('../../assets/images/daytime.jpg')" : "url('../../assets/images/nighttime.jpg')"
@@ -53,10 +55,10 @@ export class AnalogClockComponent implements OnInit {
     // this.woodstockImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/woodstockbubbleLeft.png')" : "url('../../assets/images/woodstockbubbleRight.png')"
     // this.woodstock.nativeElement.style.backgroundImage = this.woodstockImg
   }
-  playAudio(){
-    let audio = new Audio();
-    audio.src = "../../../assets/sounds/snoopyDance.mp3";
-    audio.load();
-    audio.play();
-  }
+  // playAudio(){
+  //   let audio = new Audio();
+  //   audio.src = "../../../assets/sounds/snoopyDance.mp3";
+  //   audio.load();
+  //   audio.play();
+  // }
 }
