@@ -14,11 +14,17 @@ export class AnalogClockComponent implements OnInit {
   @ViewChild('secHand', {static: false}) secHand: ElementRef;
   // @ViewChild('bubble', {static: false}) bubble: ElementRef;
 
+  private daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   private date = new Date()
 
   public hour: any;
   public minute: string;
   public second: string;
+  public ampm: string;
+  public day: string;
+  public backgound: string;
+  public woodstock: string;
+  public snoopy: string;
 
   constructor() { }
 
@@ -36,7 +42,10 @@ export class AnalogClockComponent implements OnInit {
     this.hrHand.nativeElement.style.transform = 'rotate(' + (date.getHours() * 30 + date.getMinutes() * 0.5) + 'deg)';
     // this.hrValue.nativeElement.style.transform = 'rotate(-' + (date.getHours() * 30 + date.getMinutes() * 0.5) + 'deg)';
 
+
     const hours = date.getHours();
+    this.ampm = hours >= 12 ? 'PM' : 'AM'
+
     this.hour = hours % 12;
     this.hour = this.hour ? this.hour : 12;
 
