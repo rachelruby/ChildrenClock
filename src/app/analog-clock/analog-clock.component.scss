@@ -127,7 +127,7 @@ h2 {
   top: 10%;
 }
 
-#woodstock {
+.woodstock {
   width: 3em;
   height: 3em;
   position: absolute;
@@ -137,8 +137,6 @@ h2 {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  // top: 10%;
-  // left: 10%;
   z-index: 4;
 }
 
@@ -169,12 +167,12 @@ h2 {
   left: -80%;
 }
 
-#purse {
+.day {
   width: 120px;
   height: 120px;
-  z-index: 3;
-  transform: rotate(-80deg);
-  transform-origin: center;
+  // z-index: 3;
+  // transform: rotate(-80deg);
+  // transform-origin: center;
 }
 
 .hours {
