@@ -74,10 +74,10 @@ export class AnalogClockComponent implements OnInit {
     this.background.nativeElement.style.backgroundImage = this.backgroundImg
   }
   playAudio(){
-    // let audio = new Audio();
-    // audio.src = "../../../assets/sounds/snoopyDance.mp3";
-    // audio.load();
-    // audio.play();
+    let audio = new Audio();
+    audio.src = "../../../assets/sounds/snoopyDance.mp3";
+    audio.load();
+    audio.play();
     // add snoopy play button since audio does not play automatically
   }
 }
