@@ -16,10 +16,10 @@ h1 {
   font-size: 40px;
 }
 .rainbow {
-  text-align: center;
+  // text-align: bottom;
   font-size: 3.5em;
   font-family: "DK Cool Crayon";
-  background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background: linear-gradient(to left, rgb(255, 147, 255), rgb(132, 9, 219), rgb(64, 64, 252), rgb(5, 238, 5), yellow, rgb(255, 175, 27), rgb(255, 56, 56));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-shadow: 0 0 2px rgba(0,0,0,.5);
@@ -72,7 +72,8 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
-  // top: 10%;
+  position: absolute;
+  top: 40%;
 }
 
 .clock::before
@@ -132,6 +133,7 @@ h2 {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+  z-index: 6;
 }
 
 #lines {
@@ -148,13 +150,14 @@ h2 {
   width: 3em;
   height: 3em;
   position: absolute;
-  transform: rotate(12deg);
+  transform: rotate(6deg);
   transform-origin: 10% 15%;
   background-image: url('../../assets/images/woodstockbubbleLeft.png');
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  z-index: 4;
+  // right: 0%;
+  // left: 40%;
 }
 
 .hr-hand {

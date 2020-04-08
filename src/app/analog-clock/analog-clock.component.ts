@@ -67,7 +67,7 @@ export class AnalogClockComponent implements OnInit {
     this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
     this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
 
-    this.snoopyImg = minutes >= 0 && minutes < 10 ? "url('../../assets/images/upright.png')" : minutes >= 10 && minutes < 15 ? "url('../../assets/images/rightSit.png')" : minutes >= 15 && minutes < 20 ? "url('../../assets/images/right.png')" : minutes >= 20 && minutes < 30 ? "url('../../assets/images/downright.png')" : minutes >=30 && minutes < 40 ? "url('../../assets/images/downleft.png')" : minutes >= 40 && minutes < 45 ? "url('../../assets/images/left.png')" : minutes >= 45 && minutes < 50 ? "url('../../assets/images/leftSit.png')" : minutes >= 50 && minutes <= 59 ? "url('../../assets/images/upleft.png')" : "url('../../assets/images/upright.png')"
+    this.snoopyImg = minutes >= 0 && minutes < 8 ? "url('../../assets/images/upright.png')" : minutes >= 8 && minutes < 15 ? "url('../../assets/images/rightsit.png')" : minutes >= 15 && minutes < 20 ? "url('../../assets/images/right.png')" : minutes >= 20 && minutes < 30 ? "url('../../assets/images/downright.png')" : minutes >=30 && minutes < 40 ? "url('../../assets/images/downleft.png')" : minutes >= 40 && minutes < 45 ? "url('../../assets/images/left.png')" : minutes >= 45 && minutes < 52 ? "url('../../assets/images/leftsit.png')" : minutes >= 52 && minutes <= 59 ? "url('../../assets/images/upleft.png')" : "url('../../assets/images/upright.png')"
     this.snoopy.nativeElement.style.backgroundImage = this.snoopyImg
 
     this.backgroundImg = hours > 6 && hours < 18 ? "url('../../assets/images/daytime.jpg')" : "url('../../assets/images/nighttime.jpg')"
@@ -78,6 +78,6 @@ export class AnalogClockComponent implements OnInit {
     // audio.src = "../../../assets/sounds/snoopyDance.mp3";
     // audio.load();
     // audio.play();
-    //add snoopy play button since audio does not play automatically
+    // add snoopy play button since audio does not play automatically
   }
 }
