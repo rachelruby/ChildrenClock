@@ -12,7 +12,9 @@ export class AnalogClockComponent implements OnInit {
   @ViewChild('minValue', {static: false}) minValue: ElementRef;
   @ViewChild('secHand', {static: false}) secHand: ElementRef;
   @ViewChild('woodstock', {static: false}) woodstock: ElementRef;
-  // @ViewChild('bubble', {static: false}) bubble: ElementRef;
+  @ViewChild('bubble', {static: false}) bubble: ElementRef;
+  @ViewChild('snoopy', {static: false}) snoopy: ElementRef;
+
 
   private daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   private date = new Date()
@@ -25,6 +27,7 @@ export class AnalogClockComponent implements OnInit {
   public backgound: string;
   public woodstockImg: string;
   public snoopyImg: string;
+  public bubbleImg: string;
 
   constructor() { }
 
@@ -44,21 +47,32 @@ export class AnalogClockComponent implements OnInit {
     this.day = this.daysOfWeek[this.date.getDay()]
 
     const hours = date.getHours();
+
     this.ampm = hours >= 12 ? 'PM' : 'AM'
+
     this.backgound = hours > 6 && hours < 18 ? "url('../../assets/images/daytime.jpg')" : "url('../../assets/images/nighttime.jpg')"
-
     this.hour = hours % 12;
-    this.hour = this.hour ? this.hour : 12;
 
+    this.hour = this.hour ? this.hour : 12;
+    //add feature for glowing hour number
     const minutes = date.getMinutes();
+
     this.minute = minutes < 10 ? '0' + minutes : minutes.toString()
-    // this.woodstockImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/woodstockbubbleLeft.png')" : "url('../../assets/images/woodstockbubbleRight.png')"
-    // this.woodstock.nativeElement.style.backgroundImage = this.woodstockImg
+
+    this.woodstockImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/woodstockbubbleLeft.png')" : "url('../../assets/images/woodstockbubbleRight.png')"
+    this.woodstock.nativeElement.style.backgroundImage = this.woodstockImg
+
+    this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
+    this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
+
+    this.snoopyImg = hours > 0 && hours < 1 ? "url('../../assets/images/upright.png')" : hours >= 1 && hours < 3 ? "url('../../assets/images/rightSit.png')" : hours >= 3 && hours < 4 ? "url('../../assets/images/right.png')" : hours >= 4 && hours < 6 ? "url('../../assets/images/downleft.png')" : hours >= 8 && hours < 9 ? "url('../../assets/images/left.png')" : hours >= 9 && hours < 11 ? "url('../../assets/images/leftSit.png')" : hours >= 11 && hours < 12 ? "url('../../assets/images/upleft.png')" : "url('../../assets/images/upright.png')"
+    this.snoopy.nativeElement.style.backgroundImage = this.snoopyImg
   }
-  // playAudio(){
-  //   let audio = new Audio();
-  //   audio.src = "../../../assets/sounds/snoopyDance.mp3";
-  //   audio.load();
-  //   audio.play();
-  // }
+  playAudio(){
+    // let audio = new Audio();
+    // audio.src = "../../../assets/sounds/snoopyDance.mp3";
+    // audio.load();
+    // audio.play();
+    //add snoopy play button since audio does not play automatically
+  }
 }

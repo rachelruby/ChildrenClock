@@ -15,6 +15,11 @@ h1 {
   font-weight: bold;
   font-size: 40px;
 }
+.rainbow {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 h2 {
   color: black;
@@ -49,15 +54,22 @@ h2 {
   box-shadow: inset 20px 20px 30px rgba(0,0,0,0.1),
                     0 20px 20px rgba(0,0,0,.2),
                     0 0 0 4px rgba(255,255,255,1);
-  background-image: url('../../assets/images/snoopyhouse.png'), url('../../assets/images/rightsit.png');
-  background-size: 55% 55%, 20% 20%;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom, center;
+  background-image: url('../../assets/images/snoopyhouse.png');
+  background-size: 55% 55%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   top: 10%;
 }
 
-// #snoopy {
-// }
+.snoopy {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/rightsit.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  // top: 10%;
+}
 
 .clock::before
 {
@@ -86,12 +98,13 @@ h2 {
 .min-hand {
   width: 3px;
   height: 48%;
-  background: #50BFE6;
+  background: rgb(96, 191, 226);
   position: absolute;
   top: 12%;
   transform-origin: 50% 80%;
   left: calc(50% - 1px);
   border-radius: 100% 100% 0 0 ;
+  //maybe shadow?
 }
 .min-value {
   position: absolute;
@@ -117,7 +130,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-#wandarm {
+#lines {
   width: 3em;
   height: 7em;
   position: absolute;
