@@ -16,9 +16,13 @@ h1 {
   font-size: 40px;
 }
 .rainbow {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
+  text-align: center;
+  font-size: 3.5em;
+  font-family: "DK Cool Crayon";
+  background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0 0 2px rgba(0,0,0,.5);
 }
 
 h2 {
