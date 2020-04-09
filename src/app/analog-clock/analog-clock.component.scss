@@ -19,10 +19,8 @@ h1 {
   // text-align: bottom;
   font-size: 3.5em;
   font-family: "DK Cool Crayon";
-  background: linear-gradient(to left, rgb(255, 147, 255), rgb(132, 9, 219), rgb(64, 64, 252), rgb(5, 238, 5), yellow, rgb(255, 175, 27), rgb(255, 56, 56));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  text-shadow: 0 0 2px rgba(0,0,0,.5);
+  text-shadow: 3px 3px 4px black;
+  text-align: center;
 }
 
 h2 {
@@ -328,5 +326,5 @@ h2 {
 
 }
 
-@import url(//db.onlinewebfonts.com/c/2858f88cb71b6ac1122a944e220d9940?family=DK+Cool+Crayon);
-@font-face {font-family: "DK Cool Crayon"; src: url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.eot"); src: url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.woff") format("woff"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.svg#DK Cool Crayon") format("svg"); }
+// @import url(//db.onlinewebfonts.com/c/2858f88cb71b6ac1122a944e220d9940?family=DK+Cool+Crayon);
+// @font-face {font-family: "DK Cool Crayon"; src: url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.eot"); src: url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.woff") format("woff"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2858f88cb71b6ac1122a944e220d9940.svg#DK Cool Crayon") format("svg"); }
