@@ -42,6 +42,21 @@ h2 {
   background-size: cover;
 }
 
+.ampm {
+  display: flex;
+  justify-content: space-around;
+  width: 2em;
+  height: 2em;
+  // background-image: url('../../assets/images/4.png');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  position: absolute;
+  top: 15%;
+  font-family: "DK Cool Crayon";
+  color: #FFCC33;
+}
+
 .clock {
   position: relative;
   width: 500px;
@@ -54,7 +69,7 @@ h2 {
   margin: 40px;
   font-size: 25px;
   box-shadow: inset 20px 20px 30px rgba(0,0,0,0.1),
-                    0 20px 20px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0, 0, 0, 0.2),
                     0 0 0 4px rgba(255,255,255,1);
   background-image: url('../../assets/images/snoopyhouse.png');
   background-size: 55% 55%;
@@ -72,6 +87,7 @@ h2 {
   background-position: center bottom;
   position: absolute;
   top: 43%;
+  z-index: 11;
 }
 
 .clock::before
@@ -89,21 +105,21 @@ h2 {
 .sec-hand {
   width: 1px;
   height: 50%;
-  background: purple;
+  background: rgb(255, 68, 255);
   transform-origin: 50% 80%;
   position: absolute;
   top: 10%;
   left: 50%;
   border-radius: 100% 100% 0 0 ;
-  z-index: 6;
+  // z-index: 6;
 }
 
 .min-hand {
-  width: 3px;
-  height: 48%;
-  background: rgb(96, 191, 226);
+  width: 4px;
+  height: 43%;
+  background: rgb(199, 50, 167);
   position: absolute;
-  top: 12%;
+  top: 15.5%;
   transform-origin: 50% 80%;
   left: calc(50% - 1px);
   border-radius: 100% 100% 0 0 ;
@@ -138,7 +154,7 @@ h2 {
   width: 3em;
   height: 7em;
   position: absolute;
-  z-index: 4;
+  // z-index: 4;
   transform: rotate(-4deg);
   transform-origin: 50% 100%;
   top: 10%;
@@ -160,12 +176,12 @@ h2 {
 
 .hr-hand {
 
-  width: 5px;
+  width: 9px;
   height: 32%;
   background: #100761;
   position: absolute;
   transform-origin: 50% 80%;
-  top: 24%;
+  top: 24.5%;
   border-radius: 100% 100% 0 0 ;
 }
 
@@ -195,7 +211,7 @@ h2 {
 }
 
 .hours {
-  z-index: 8;
+  // z-index: 8;
   background: white;
   border-radius: 50%;
 }
@@ -223,7 +239,7 @@ h2 {
   text-align: center;
   vertical-align: middle;
   font-family: "DK Cool Crayon";
-  text-shadow: 3px 3px 4px orangered;
+  text-shadow: 3px 3px 4px rgb(255, 0, 43);
 }
 
 .num1 {

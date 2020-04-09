@@ -31,6 +31,7 @@ export class AnalogClockComponent implements OnInit {
   public snoopyImg: string;
   public bubbleImg: string;
   public backgroundImgPos: number;
+  public glowHour: string;
 
   constructor() { }
 
@@ -62,11 +63,11 @@ export class AnalogClockComponent implements OnInit {
 
     this.minute = minutes < 10 ? '0' + minutes : minutes.toString()
 
-    this.woodstockImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/woodstockbubbleLeft.png')" : "url('../../assets/images/woodstockbubbleRight.png')"
+    this.woodstockImg = minutes > 13 && minutes < 44 ? "url('../../assets/images/woodstockbubbleLeft.png')" : "url('../../assets/images/woodstockbubbleRight.png')"
     this.woodstock.nativeElement.style.backgroundImage = this.woodstockImg
 
-    this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
-    this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
+    // this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
+    // this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
 
     this.snoopyImg = minutes >= 0 && minutes < 8 ? "url('../../assets/images/upright.png')" : minutes >= 8 && minutes < 15 ? "url('../../assets/images/rightsit.png')" : minutes >= 15 && minutes < 20 ? "url('../../assets/images/right.png')" : minutes >= 20 && minutes < 30 ? "url('../../assets/images/downright.png')" : minutes >=30 && minutes < 40 ? "url('../../assets/images/downleft.png')" : minutes >= 40 && minutes < 45 ? "url('../../assets/images/left.png')" : minutes >= 45 && minutes < 52 ? "url('../../assets/images/leftsit.png')" : minutes >= 52 && minutes <= 59 ? "url('../../assets/images/upleft.png')" : "url('../../assets/images/upright.png')"
     this.snoopy.nativeElement.style.backgroundImage = this.snoopyImg
@@ -76,6 +77,9 @@ export class AnalogClockComponent implements OnInit {
 
     this.backgroundImgPos = minutes >= 15 && minutes < 45 ? 43 : 40
     this.snoopy.nativeElement.style.top = this.backgroundImgPos + '%'
+
+    // this.glowHour = "num num" + this.hour.toString()
+    // this.`${glowHour}`.nativeElement.style
   }
   playAudio(){
     // let audio = new Audio();
