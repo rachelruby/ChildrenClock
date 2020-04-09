@@ -43,8 +43,8 @@ h2 {
 }
 
 .ampm {
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // justify-content: space-around;
   width: 2em;
   height: 2em;
   // background-image: url('../../assets/images/4.png');
@@ -52,7 +52,18 @@ h2 {
   // background-repeat: no-repeat;
   // background-position: center;
   position: absolute;
-  top: 15%;
+  top: 13%;
+  font-family: "DK Cool Crayon";
+  color: #FFCC33;
+}
+
+.day {
+  // display: flex;
+  // justify-content: space-around;
+  width: 2em;
+  height: 2em;
+  position: center;
+  top: 55%;
   font-family: "DK Cool Crayon";
   color: #FFCC33;
 }
