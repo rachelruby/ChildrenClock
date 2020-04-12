@@ -78,14 +78,20 @@ export class AnalogClockComponent implements OnInit {
     // this.backgroundImgPos = minutes >= 15 && minutes < 45 ? 43 : 40
     // this.snoopy.nativeElement.style.top = this.backgroundImgPos + '%'
 
-    // this.glowHour = "num num" + this.hour.toString()
-    // this.`${glowHour}`.nativeElement.style
+    // this.glowHour = "num" + this.hour.toString()
+    // console.log('glowhour', this.glowHour)
+    // this.(this.glowHour).nativeElement.style.color = 'black'
+    // this.glow(this.glowHour)
   }
+
+  // glow(hour){
+  //   return `this.${hour}.nativeElement.style.color = '#CCFF00'`
+  // }
   playAudio(){
-    // let audio = new Audio();
-    // audio.src = "../../../assets/sounds/snoopyDance.mp3";
-    // audio.load();
-    // audio.play();
+    let audio = new Audio();
+    audio.src = "../../../assets/sounds/snoopyDance.mp3";
+    audio.load();
+    audio.play();
     // add snoopy play button since audio does not play automatically
   }
 }
