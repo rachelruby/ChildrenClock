@@ -64,7 +64,7 @@ export class AnalogClockComponent implements OnInit {
     this.minute = minutes < 10 ? '0' + minutes : minutes.toString()
 
     this.woodstockImg = minutes > 13 && minutes < 44 ? "woodstock1" : "woodstock2"
-    this.woodstock.nativeElement.class = this.woodstockImg
+    this.woodstock.nativeElement.className = this.woodstockImg
 
     this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
     this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
