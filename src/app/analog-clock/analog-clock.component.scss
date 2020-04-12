@@ -171,13 +171,27 @@ h2 {
   top: 10%;
 }
 
-.woodstock {
+.woodstock1 {
   width: 3em;
   height: 3em;
   position: absolute;
   transform: rotate(6deg);
   transform-origin: 10% 15%;
   background-image: url('../../assets/images/woodstockbubbleLeft.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  // right: 0%;
+  // left: 40%;
+}
+
+.woodstock2 {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  transform: rotate(6deg);
+  transform-origin: 10% 15%;
+  background-image: url('../../assets/images/woodstockbubbleRight.png');
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
