@@ -66,17 +66,17 @@ export class AnalogClockComponent implements OnInit {
     this.woodstockImg = minutes > 13 && minutes < 44 ? "woodstock1" : "woodstock2"
     this.woodstock.nativeElement.className = this.woodstockImg
 
-    this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
-    this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
+    // this.bubbleImg = minutes > 14 && minutes < 45 ? "url('../../assets/images/bubbleLeft.png')" : "url('../../assets/images/bubbleRight.png')"
+    // this.bubble.nativeElement.style.backgroundImage = this.bubbleImg
 
-    this.snoopyImg = minutes >= 0 && minutes < 8 ? "url('../../assets/images/upright.png')" : minutes >= 8 && minutes < 15 ? "url('../../assets/images/rightsit.png')" : minutes >= 15 && minutes < 20 ? "url('../../assets/images/right.png')" : minutes >= 20 && minutes < 30 ? "url('../../assets/images/downright.png')" : minutes >=30 && minutes < 40 ? "url('../../assets/images/downleft.png')" : minutes >= 40 && minutes < 45 ? "url('../../assets/images/left.png')" : minutes >= 45 && minutes < 52 ? "url('../../assets/images/leftsit.png')" : minutes >= 52 && minutes <= 59 ? "url('../../assets/images/upleft.png')" : "url('../../assets/images/upright.png')"
-    this.snoopy.nativeElement.style.backgroundImage = this.snoopyImg
+    this.snoopyImg = minutes >= 0 && minutes < 8 ? 'snoopy1' : minutes >= 8 && minutes < 15 ? 'snoopy2' : minutes >= 15 && minutes < 20 ? 'snoopy3' : minutes >= 20 && minutes < 30 ? 'snoopy4' : minutes >=30 && minutes < 40 ? 'snoopy5' : minutes >= 40 && minutes < 45 ? 'snoopy6' : minutes >= 45 && minutes < 52 ? 'snoopy7' : minutes >= 52 && minutes <= 59 ? 'snoopy8' : 'snoopy1'
+    this.snoopy.nativeElement.className = this.snoopyImg
 
-    this.backgroundImg = hours >= 6 && hours < 18 ? "url('../../assets/images/daytime.jpg')" : hours >= 18 && hours < 20 ? "url('../../assets/images/sunset.jpg')" : "url('../../assets/images/nighttime.jpg')"
-    this.background.nativeElement.style.backgroundImage = this.backgroundImg
+    this.backgroundImg = hours >= 6 && hours < 18 ? "kids-clock1" : hours >= 18 && hours < 20 ? "kids-clock2" : "kids-clock3"
+    this.background.nativeElement.className = this.backgroundImg
 
-    this.backgroundImgPos = minutes >= 15 && minutes < 45 ? 43 : 40
-    this.snoopy.nativeElement.style.top = this.backgroundImgPos + '%'
+    // this.backgroundImgPos = minutes >= 15 && minutes < 45 ? 43 : 40
+    // this.snoopy.nativeElement.style.top = this.backgroundImgPos + '%'
 
     // this.glowHour = "num num" + this.hour.toString()
     // this.`${glowHour}`.nativeElement.style

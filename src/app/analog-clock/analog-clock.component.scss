@@ -30,13 +30,37 @@ h2 {
   font-size: 30px;
 }
 
-.kids-clock {
+.kids-clock1 {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-image: url('../../assets/images/daytime.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kids-clock2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('../../assets/images/sunset.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kids-clock3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('../../assets/images/nighttime.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,10 +113,94 @@ h2 {
   top: 10%;
 }
 
-.snoopy {
+.snoopy1 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/upright.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy2 {
   width: 4.5em;
   height: 4.5em;
   background-image: url('../../assets/images/rightsit.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy3 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy4 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/downright.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy5 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/downleft.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy6 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/left.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy7 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/leftsit.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 43%;
+  z-index: 11;
+}
+
+.snoopy8 {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url('../../assets/images/upleft.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
